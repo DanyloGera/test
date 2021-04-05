@@ -142,7 +142,7 @@ window.onload = function () {
 
   }
 
-  player.onclick = function() {
+  function play1() {
       let start = Date.now();
 
       let timer = setInterval(function() {
