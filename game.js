@@ -166,11 +166,18 @@ setInterval(timer1, 1000);
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 500;
 
-    const mummyAnimation = this.anims.create({
-            key: 'walk',
-            frames: this.anims.generateFrameNumbers('mummy'),
-            frameRate: 16
-        });
+    mummy = game.add.sprite(60, 480, 'player');
+    mummy.animations.add('walk');
+    mummy.anchor.setTo(0.5, 1);
+    game.physics.arcade.enable(mummy);
+    mummy.body.collideWorldBounds = true;
+    mummy.body.gravity.y = 500;
+
+    // const mummyAnimation = this.anims.create({
+    //         key: 'walk',
+    //         frames: this.anims.generateFrameNumbers('mummy'),
+    //         frameRate: 16
+    //     });
 
         const sprite = this.add.sprite(50, 300, 'mummy').setScale(4);
 
