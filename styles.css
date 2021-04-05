@@ -1,0 +1,248 @@
+html {
+background-image: linear-gradient(to bottom, #cbf3eb, #c6f6e3, #c8f9d7, #d0fac8, #def9b7, #ebf3b2, #f6edb1, #ffe7b2, #ffe1c1, #ffded3, #fadfe0, #ebe2e5);
+ }
+ canvas {
+    margin: auto;
+    box-shadow: 0 0  20px 10px #4F7072;
+    border-radius: 10px;
+  }
+.btn-back {
+  position: absolute;
+  top: 50px;
+  background-color: #FEC75E;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 15px;
+}
+.btn-back-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.btn-next-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.btn-next{
+  position: absolute;
+  top: 50px;
+  right: 70px;
+  background-color: #FEC75E;
+  padding: 20px;
+  /* border: 2px solid #000; */
+  border-radius: 10px;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 15px;
+}
+
+/* info advertisement */
+.info-wrap {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 115px;
+right: 50px;
+}
+.column-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.new{
+   border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.new:hover{
+  transform: scale(3);
+  image: url('./booklets/ad2021.png');
+}
+.fond {
+ border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition:image, width, height, 2s ease-in-out;
+}
+.fond:hover{
+  transform: scale(3);
+image: url('./booklets/ad-fond.png');
+}
+.wear {
+    border: 1px solid #000;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    transition: image, width, height, 2s ease-in-out;
+}
+.wear:hover{
+transform: scale(3);
+  image: url('./booklets/ad-wear.png');
+}
+.tea{
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.tea:hover{
+  transform: scale(3);
+  image: url('./booklets/ad-tea.png');
+}
+.product{
+    border: 1px solid #000;
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    transition:   image, width, height, 2s ease-in-out;
+}
+.product:hover{
+transform: scale(3);
+   image: url('./booklets/ad-product.png');
+}
+.birth {
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition:    image, width, height, 2s ease-in-out;
+}
+.birth:hover{
+  transform: scale(3);
+     image: url('./booklets/ad-birth.png');
+}
+.goodproject{
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.goodproject:hover{
+  transform: scale(3);
+  image: url('./booklets/ad-goodproject.png');
+}
+.news{
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.news:hover{
+  transform: scale(3);
+image: url('./booklets/news-info.png');
+}
+.info{
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.info:hover{
+  transform: scale(3);
+  image: url('./booklets/ad-info.png');
+}
+.alone{
+  border: 1px solid #000;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  transition: image, width, height, 2s ease-in-out;
+}
+.alone:hover{
+  transform: scale(3);
+image: url('./booklets/ad-alone.png');
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.callout {
+  position: fixed;
+    width: 50%;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family: 'Rye', cursive;
+}
+
+.callout-container {
+  padding: 20px 70px 55px 70px;
+  background-color: #ccc;
+  color: black;
+  text-align: center;
+  text-align: justify;
+  font-family: 'Rye', cursive;
+  font-size: 25px;
+}
+
+.closebtn1 {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn1:hover {
+  color: lightgrey;
+}
+.img-sign {
+  height: 30px;
+  width: 30px;
+}
+
+.alert {
+  position: absolute;
+  top: 200px;
+  padding: 20px;
+  width: 15%;
+  background-color: #eee;
+  color: #000;
+  border: 3px dashed #4F7072;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #555;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+p{
+  text-align: justify;
+}
+
+/* time */
+.timer-wrapper {
+  position: absolute;
+top: 500px;
+}
+.timer {
+  width: 150px;
+  background-color: #FEC75E;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}

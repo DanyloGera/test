@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Game part1</title>
+      <link rel="stylesheet" href="./styles.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<button id="btn" type="button" name="button"></button>
+        <script src="phaser.js"></script>
+        <script src="game.js"></script>
+
+  <div class="container">
+    <div class="callout">
+      <div class="callout-header">Завдання </div>
+        <span class="closebtn1" onclick="this.parentElement.style.display='none';">×</span>
+          <div class="callout-container">
+              <p> Станьте нашим волонтером. Зберіть усі афіші та приєднуйтесь до доброчинної діяльності.
+                Зібравши, доберіться до входу в приміщеня й переходьте до наступних завдань.
+                Ви можете допомогти покращити старість в Україні! Долучайтесь до "STARENKI",
+              ставайте волонтерами, спонсорами чи просто друзями проекту. Наші двері завжди відкриті для добрих людей будь-якого віку й можливостей.
+              </p>
+        </div>
+    </div>
+  </div>
+
+<!-- button to the site -->
+        <div class="btn-back-wrapper">
+          <button type="button" class="btn-back">&#8619; Back to the site</button>
+
+        </div>
+
+<!-- button to the next level -->
+        <div class="btn-next-wrapper">
+          <button  type="button" disabled id="btn-next" class="btn-next" onClick='location.href="https://danylogera.github.io/game-2/"'>Next level &#8620;</button></a>
+
+
+<!-- images info -->
+  <div class="info-wrap">
+
+
+
+      <div class="column-wrap">
+        <img class="new" src="./booklets/ad2021.png" alt="">
+        <img class="wear" src="./booklets/ad-wear.png" alt="">
+        <img class="product" src="./booklets/ad-product.png" alt="">
+        <img class="goodproject" src="./booklets/ad-goodproject.png" alt="">
+        <img class="info" src="./booklets/ad-info.png" alt="">
+
+      </div>
+
+      <div class="column-wrap">
+        <img class="fond" src="./booklets/ad-fond.png" alt="">
+        <img class="tea" src="./booklets/ad-tea.png" alt="">
+        <img class="birth" src="./booklets/ad-birth.png" alt="">
+        <img class="news" src="./booklets/news-info.png" alt="">
+        <img class="alone" src="./booklets/ad-alone.png" alt="">
+
+      </div>
+  </div>
+        </div>
+
+        <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Controls!</strong> <p>Використовуйте клавіші стрілки на клавіатурі
+⟵ ⟶	,
+  щоб контрулювати напрям руху персонажа. Стрибок виконуйте за допомогою кнопки SPACE(пробіл).
+</p>
+</div>
+<div class="timer-wrapper">
+  <input class="timer" id="timer" type="text" name="" value="" disabled value="00:00">
+</div>
+
+
+    </body>
+</html>
