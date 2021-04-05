@@ -185,7 +185,11 @@ setInterval(timer1, 1000);
     player.body.velocity.x = 0;
 
 if(btn.clicked == true){
-  alert("hello");
+  player.animations.play('walk', 10, true);
+    player.body.velocity.x = 300;
+    player.scale.x = 1;
+}else {
+  player.animations.stop();
 }
     // is the left cursor key presssed?
     // if (cursors.left.isDown) {
