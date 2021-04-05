@@ -124,7 +124,6 @@ window.onload = function () {
 
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
-    game.load.spritesheet('mummy', 'chalkers.png', 48, 62);
 
     game.load.spritesheet('fond', 'booklets/fond.png', 36, 44);
     game.load.spritesheet('product', 'booklets/product.png', 36, 44);
@@ -165,30 +164,6 @@ setInterval(timer1, 1000);
     game.physics.arcade.enable(player);
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 500;
-
-    mummy = game.add.sprite(60, 480, 'player');
-    mummy.animations.add('walk');
-    mummy.anchor.setTo(0.5, 1);
-    game.physics.arcade.enable(mummy);
-    mummy.body.collideWorldBounds = true;
-    mummy.body.gravity.y = 500;
-
-    // const mummyAnimation = this.anims.create({
-    //         key: 'walk',
-    //         frames: this.anims.generateFrameNumbers('mummy'),
-    //         frameRate: 16
-    //     });
-
-        const sprite = this.add.sprite(50, 300, 'mummy');
-
-        sprite.play({ key: 'walk', repeat: 7 });
-
-        this.tweens.add({
-            targets: sprite,
-            x: 300,
-            duration: 8800,
-            ease: 'Linear'
-        });
 
     addItems();
     addPlatforms();
