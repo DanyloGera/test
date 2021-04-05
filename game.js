@@ -124,7 +124,6 @@ window.onload = function () {
 
     //Load spritesheets
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
-    game.load.spritesheet('player1', 'chalkers.png', 48, 62);
 
     game.load.spritesheet('fond', 'booklets/fond.png', 36, 44);
     game.load.spritesheet('product', 'booklets/product.png', 36, 44);
@@ -160,14 +159,12 @@ setInterval(timer1, 1000);
     timer1();
     this.add.image(0, 0, 'background');
     player = game.add.sprite(60, 480, 'player');
-    this.game.add.sprite(60, 480, 'player1');
     player.animations.add('walk');
     player.anchor.setTo(0.5, 1);
     game.physics.arcade.enable(player);
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 500;
-    var tween = game.add.tween('player1');
-    tween.to({ x: 800 }, 5000, 'Linear', true, 0);
+
     addItems();
     addPlatforms();
 
