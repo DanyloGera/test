@@ -194,9 +194,9 @@ setInterval(timer1, 1000);
   player.animations.play('walk', 10, true);
   player.body.velocity.x = 10;
   player.scale.x = 1;
-  
+
   }
-setInterval(play, 1000);
+setInterval(play, 1000,player.animations.stop());
 
     // if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
     //   player.body.velocity.y = -330;
