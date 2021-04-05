@@ -179,7 +179,7 @@ setInterval(timer1, 1000);
     //         frameRate: 16
     //     });
 
-        const sprite = this.add.sprite(50, 300, 'mummy').setScale(4);
+        const sprite = this.add.sprite(50, 300, 'mummy');
 
         sprite.play({ key: 'walk', repeat: 7 });
 
