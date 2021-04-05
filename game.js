@@ -166,7 +166,7 @@ setInterval(timer1, 1000);
     game.physics.arcade.enable(player);
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 500;
-    var tween = game.add.tween(player1);
+    var tween = game.add.tween('player1');
     tween.to({ x: 800 }, 5000, 'Linear', true, 0);
     addItems();
     addPlatforms();
