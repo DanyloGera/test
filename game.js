@@ -1,6 +1,5 @@
 // define variables
 var game;
-var btn = document.getElementById('btn')
 var player;
 var platforms;
 var badges;
@@ -184,13 +183,6 @@ setInterval(timer1, 1000);
     game.physics.arcade.overlap(player, badges, badgeHandler);
     player.body.velocity.x = 0;
 
-if(btn.clicked == true){
-  player.animations.play('walk', 10, true);
-    player.body.velocity.x = 300;
-    player.scale.x = 1;
-}else {
-  player.animations.stop();
-}
     // is the left cursor key presssed?
     // if (cursors.left.isDown) {
     //   player.animations.play('walk', 10, true);
@@ -198,16 +190,16 @@ if(btn.clicked == true){
     //   player.scale.x = - 1;
     // }
     // // is the right cursor key pressed?
-    // else if (cursors.right.isDown) {
-    //   player.animations.play('walk', 10, true);
-    //   player.body.velocity.x = 300;
-    //   player.scale.x = 1;
-    // }
-    // // player doesn't move
-    // else {
-    //   player.animations.stop();
-    // }
-    //
+     if (cursors.right.isDown) {
+      player.animations.play('walk', 10, true);
+      player.body.velocity.x = 300;
+      player.scale.x = 1;
+    }
+    // player doesn't move
+    else {
+      player.animations.stop();
+    }
+
     // if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
     //   player.body.velocity.y = -330;
     // }
