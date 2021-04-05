@@ -142,6 +142,18 @@ window.onload = function () {
 
   }
 
+  player.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        player.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
 
 //timer
   var sec1 = 0;
@@ -190,18 +202,7 @@ setInterval(timer1, 1000);
     //   player.scale.x = - 1;
     // }
     // // is the right cursor key pressed?
-    player.onclick = function() {
-        let start = Date.now();
 
-        let timer = setInterval(function() {
-          let timePassed = Date.now() - start;
-
-          player.style.left = timePassed / 5 + 'px';
-
-          if (timePassed > 2000) clearInterval(timer);
-
-        }, 20);
-      }
 
     // if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
     //   player.body.velocity.y = -330;
