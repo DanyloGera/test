@@ -190,15 +190,12 @@ setInterval(timer1, 1000);
     //   player.scale.x = - 1;
     // }
     // // is the right cursor key pressed?
-     if (cursors.right.isDown) {
-      player.animations.play('walk', 10, true);
-      player.body.velocity.x = 300;
-      player.scale.x = 1;
-    }
-    // player doesn't move
-    else {
-      player.animations.stop();
-    }
+    if (cursors.right.isDown) {
+  player.animations.play('walk', 10, true);
+  player.body.velocity.x = 10;
+  player.scale.x = 1;
+  player.animations.stop();
+}
 
     // if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
     //   player.body.velocity.y = -330;
