@@ -190,13 +190,18 @@ setInterval(timer1, 1000);
     //   player.scale.x = - 1;
     // }
     // // is the right cursor key pressed?
-    function play() {
-  player.animations.play('walk', 10, true);
-  player.body.velocity.x = 10;
-  player.scale.x = 1;
+    player.onclick = function() {
+        let start = Date.now();
 
-  }
-setInterval(play, 1000,player.animations.stop());
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+
+          player.style.left = timePassed / 5 + 'px';
+
+          if (timePassed > 2000) clearInterval(timer);
+
+        }, 20);
+      }
 
     // if (jumpButton.isDown && (player.body.onFloor() || player.body.touching.down)) {
     //   player.body.velocity.y = -330;
